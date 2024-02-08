@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.brand-item {
+  width: 33.3333333333%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+  padding: 1rem;
+  padding-top: 2rem;
+  margin: 1.5rem;
+}
+.brand-item a {
+  color: #171717;
+  text-decoration: none;
+  font-family: "Archivo", sans-serif;
+}
+.brand-item a .brand-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand-item a .brand-info .brand-info-text {
+  text-align: left;
+  width: 50%;
+  margin-left: 1.5rem;
+}
+.brand-item a .brand-info .brand-info-text .brand-name {
+  font-weight: 900;
+  font-size: 2rem;
+}
+.brand-item a .brand-info .brand-info-text .brand-coll-ammount {
+  font-weight: 200;
+}
+.brand-item a .brand-info .brand-logo {
+  margin-right: 1.5rem;
+  text-align: right;
+}
+.brand-item a .brand-info .brand-logo img {
+  width: 5rem;
+}
+.brand-item a .brand-img {
+  margin-top: 2rem;
+}
+.brand-item a .brand-img img {
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .brand-item a .brand-info .brand-info-text {
+    margin-left: 1rem;
+  }
+  .brand-item a .brand-info .brand-info-text .brand-name {
+    font-size: 1.8rem;
+  }
+  .brand-item a .brand-info .brand-logo {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  .brand-item a .brand-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .brand-item {
+    width: 66.6666666667%;
+  }
+  .brand-item a .brand-logo {
+    display: block;
+  }
+  .brand-item a .brand-img {
+    margin-top: 0;
+  }
+  .brand-item a .brand-img img {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .brand-item a .brand-logo {
+    display: none;
+  }
+}
+@media (max-width: 340px) {
+  .brand-item a .brand-info .brand-info-text .brand-name {
+    font-size: 8vw;
+  }
+}/*# sourceMappingURL=BrandItem.css.map */

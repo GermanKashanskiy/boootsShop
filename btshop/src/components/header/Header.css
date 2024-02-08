@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.header {
+  padding: 0.8rem;
+  padding-top: 1.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1.8rem;
+}
+.navigation a {
+  font-size: 18px;
+  font-family: "Archivo", sans-serif;
+  text-decoration: none;
+  color: #171717;
+}
+
+.header-logo {
+  color: #171717;
+  font-weight: 800;
+  font-size: 30px;
+  margin-left: 4rem;
+  font-family: "Archivo";
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.header-search_input {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: 30vw;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .header-search_input {
+    display: none;
+  }
+  .header-search_btn {
+    display: none;
+  }
+  .header-logo {
+    margin: auto;
+  }
+}/*# sourceMappingURL=Header.css.map */

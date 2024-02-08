@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.brand-item {
+    width: calc(100% / 3);
+    background-color: rgb(241 241 241);
+    border-radius: 15px;
+    padding: 1rem;
+    padding-top: 2rem;
+    margin: 1.5rem;
+
+    a {
+        color: #171717;
+        text-decoration: none;
+        font-family: 'Archivo', sans-serif;
+
+        .brand-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .brand-info-text {
+                text-align: left;
+                width: 50%;
+                margin-left: 1.5rem;
+
+                .brand-name {
+                    font-weight: 900;
+                    font-size: 2rem;
+                }
+
+                .brand-coll-ammount {
+                    font-weight: 200;
+                }
+            }
+
+            .brand-logo {
+                margin-right: 1.5rem;
+                text-align: right;
+
+                img {
+                    width: 5rem;
+                }
+            }
+        }
+
+        .brand-img {
+            margin-top: 2rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    @media (max-width:992px) {
+        a {
+            .brand-info {
+
+                .brand-info-text {
+                    margin-left: 1rem;
+
+                    .brand-name {
+                        font-size: 1.8rem;
+                    }
+                }
+
+                .brand-logo {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width:900px) {
+        a {
+
+            .brand-logo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .brand-item {
+        width: calc(100% / 1.5);
+
+        a {
+            .brand-logo {
+                display: block;
+            }
+
+            .brand-img {
+                margin-top: 0;
+
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .brand-item {
+        a {
+
+            .brand-logo {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:340px) {
+    .brand-item {
+        a {
+
+            .brand-info {
+                .brand-info-text {
+
+                    .brand-name {
+                        font-size: 8vw;
+                    }
+                }
+            }
+        }
+    }
+}
