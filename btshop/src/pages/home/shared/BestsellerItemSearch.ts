@@ -1,5 +1,5 @@
-import { IProduct } from '../../api/IProduct';
-import { products } from '../../api/data/products.data';
+import { IProduct } from '../../../api/IProduct';
+import { products } from '../../../api/data/products.data';
 
 export function FindBestseller(products: IProduct[]): IProduct | null {
     if (products.length === 0) {

@@ -1,9 +1,9 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
-import HeaderSearch from './HeaderSearch';
-import HeaderLogo from './HeaderLogo';
-import Nav from './Nav';
-import HeaderUser from './HeaderUser';
+import HeaderSearch from './shared/HeaderSearch';
+import HeaderLogo from './shared/HeaderLogo';
+import Nav from './shared/Nav';
+import HeaderUser from './shared/HeaderUser';
 import './Header.css'
 
 

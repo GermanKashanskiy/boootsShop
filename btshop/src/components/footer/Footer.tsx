@@ -1,19 +1,21 @@
 import React from "react";
-import './Footer.css'
-import FooterNav from "./FooterNav";
-import FooterLogo from "./FooterLogo";
-import FooterSection from "./FooterSection";
+import "./Footer.css";
+import FooterNav from "./shared/FooterNav";
+import FooterLogo from "./shared/FooterLogo";
+import FooterSection from "./shared/FooterSection";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
-      <FooterSection />
-      <hr />
-      <FooterNav />
-      <hr />
-      <FooterLogo />
-    </div>
+    <footer>
+      <div className="footer-container">
+        <FooterSection />
+        <hr />
+        <FooterNav />
+        <hr />
+        <FooterLogo />
+      </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

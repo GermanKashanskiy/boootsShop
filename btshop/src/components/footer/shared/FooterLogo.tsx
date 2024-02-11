@@ -9,7 +9,6 @@ const FooterLogo = () => {
       <div className="copyright">
         @2024 ALL RIGHTS !RESERVED
       </div>
-
     </div>
   );
 }
