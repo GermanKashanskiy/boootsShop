@@ -1,0 +1,16 @@
+.header-search_input {
+  border: none;
+  background-color: transparent;
+  width: 30vw;
+  height: 100%;
+}
+
+@media (max-width:768px) {
+  .header-search_input {
+    display: none;
+  }
+
+  .header-search_btn {
+    display: none;
+  }
+}

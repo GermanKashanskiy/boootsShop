@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.card-item {
+  width: 20%;
+  margin: 1.5rem;
+}
+.card-item img {
+  width: 100%;
+  border-radius: 20px;
+  background-color: rgb(241, 241, 241);
+}
+.card-item .item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Archivo", sans-serif;
+}
+.card-item .item-info .item-description {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.card-item .item-info .item-description a {
+  text-decoration: none;
+  color: #171717;
+}
+.card-item .item-info .item-description a .item-brand {
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+.card-item .item-info .item-description a .item-name {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.card-item .item-info .item-price {
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  .card-item {
+    width: 25%;
+  }
+}
+@media (max-width: 576px) {
+  .card-item {
+    width: 66.6666666667%;
+  }
+}/*# sourceMappingURL=CardItem.css.map */

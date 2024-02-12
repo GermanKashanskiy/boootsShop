@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
+.color-white {
+  color: #FBFBFB;
+}
+
+.color-black {
+  color: #171717;
+}
+
+.color-goldNwhite {
+  color: #ebe8db;
+}
+
+.font-archivo {
+  font-family: "Archivo", sans-serif;
+}
+
+.font-moirai {
+  font-family: "Moirai One";
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.dir-column {
+  flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.no-copy {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-1n5 {
+  margin-top: 1.5rem;
+}
+
+.mt-6vw {
+  margin-top: 6vw;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-3vw {
+  margin-bottom: 3vw;
+}
+
+m-1 {
+  margin: 1rem;
+}
+
+.m-1n5 {
+  margin: 1.5rem;
+}
+
+.p-6 {
+  padding: 6rem;
+}
+
+.pt-1 {
+  padding-top: 1rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.mlr-5vw {
+  margin-left: 5.5vw;
+  margin-right: 5.5vw;
+}/*# sourceMappingURL=style.css.map */

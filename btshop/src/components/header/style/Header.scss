@@ -1,0 +1,15 @@
+@import './nav.scss';
+@import './header-logo.scss';
+@import './header-search.scss';
+
+.header {
+    padding: 0.8rem;
+    padding-top: 1.8rem;
+}
+
+@media (max-width:768px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

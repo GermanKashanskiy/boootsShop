@@ -1,0 +1,30 @@
+/* classes from src/styles/style.css were not used due to the fact that the button is used more than once */
+
+.catalog-section-btn {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+
+  a {
+    font-family: 'Archivo', sans-serif;
+    color: #171717;
+    text-decoration: none;
+    border: 1px solid #171717;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 2rem;
+  }
+
+  a:hover {
+    color: #FBFBFB;
+    background-color: #171717;
+  }
+}
+
+@media (max-width:576px) {
+  .catalog-section-btn {
+    a {
+      font-size: 5vw;
+    }
+  }
+}

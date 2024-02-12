@@ -1,0 +1,15 @@
+{
+  "short_name": "BoootShop",
+  "name": "Create React App Sample",
+  "icons": [
+    {
+      "src": "logo360.png",
+      "type": "image/png",
+      "sizes": "360x360"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.card-item {
+    width: calc(100% / 5);
+    margin: 1.5rem;
+
+    img {
+        width: 100%;
+        border-radius: 20px;
+        background-color: rgb(241 241 241);
+    }
+
+    .item-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: 'Archivo', sans-serif;
+
+        .item-description {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            a {
+                text-decoration: none;
+                color: #171717;
+
+                .item-brand {
+                    font-size: 0.9rem;
+                    font-weight: 300;
+                }
+
+                .item-name {
+                    font-weight: 900;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .item-price {
+            font-weight: 900;
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .card-item {
+        width: calc(100% / 4);
+    }
+}
+
+@media (max-width:576px) {
+    .card-item {
+        width: calc(100% / 1.5);
+    }
+}
