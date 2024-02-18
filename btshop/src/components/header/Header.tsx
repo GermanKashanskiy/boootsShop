@@ -10,7 +10,7 @@ import '../../styles/style.css'
 
 const Header = () => {
     return (
-        <Paper elevation={3}>
+        <Paper elevation={2}>
             <header className='header d-flex justify-space-around items-center'>
                 <HeaderLogo />
                 <HeaderSearch />
