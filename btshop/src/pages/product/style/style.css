@@ -10,6 +10,9 @@
   background-color: rgb(241, 241, 241);
   border-radius: 50px;
 }
+#prod-section #product-image img {
+  border-radius: 50px;
+}
 #prod-section #product-price-container {
   border: 1px solid #9e9b98;
   border-radius: 30px;
@@ -32,6 +35,11 @@
   color: #171717;
   background-color: transparent;
 }
+@media (max-width: 300px) {
+  #prod-section #product-price-container button {
+    padding: 1rem 2rem;
+  }
+}
 #prod-section #product-info #container-title {
   font-weight: 900;
   font-size: 1.5rem;
@@ -44,4 +52,10 @@
   #prod-section .item-carousel img {
     width: 50%;
   }
+}
+
+#catalog-name {
+  font-weight: 900;
+  font-size: 3rem;
+  padding-left: 1rem;
 }/*# sourceMappingURL=style.css.map */

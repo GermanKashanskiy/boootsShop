@@ -1,5 +1,5 @@
 import React from "react";
-import BrandItem from "../../../components/catalog/brand-item/BrandItem";
+import BrandItem from "./brand-item/BrandItem";
 import { brands } from "../../../api/data/brands.data";
 import { Container } from "@mui/material";
 

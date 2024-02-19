@@ -49,6 +49,10 @@
   text-align: center;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .dir-column {
   flex-direction: column;
 }
@@ -70,6 +74,10 @@
 
 .mt-1 {
   margin-top: 1rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
 }
 
 .mt-1n5 {
@@ -102,6 +110,14 @@
 
 .m-1n5 {
   margin: 1.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
 }
 
 .p-6 {

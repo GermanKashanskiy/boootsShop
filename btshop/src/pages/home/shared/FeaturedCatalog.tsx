@@ -1,6 +1,6 @@
 import { Container } from "@mui/material";
 import React from "react";
-import CardItem from "../../../components/catalog/card-item/CardItem";
+import CardItem from "./card-item/CardItem";
 import { products } from "../../../api/data/products.data";
 
 const FeaturedCatalog = () => {

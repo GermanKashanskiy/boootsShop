@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { IBrand } from "../../../api/IBrand";
+import { IBrand } from "../../../../api/IBrand";
 import './BrandItem.css'
 import { SvgIcon } from "@mui/material";
 
