@@ -63,7 +63,7 @@ const Bestseller = () => {
                   </div>
 
                   <div className="betss-add-btn">
-                    <a href={bestItem?.page}>ADD TO CART</a>
+                    <a href="">ADD TO CART</a>
                   </div>
                 </div>
               </div>

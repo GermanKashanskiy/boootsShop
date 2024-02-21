@@ -11,8 +11,6 @@ import Footer from "../../components/footer/Footer";
 function P_Home() {
   return (
     <div>
-      <Header />
-
       <section className="intro-section-container no-copy">
         <div className="intro-section_store-name font-moirai color-white text-center p-6">BOOOTSHOP</div>
         <div className="intro-section_shop-now font-archivo d-flex items-center justify-space-around flex-wrap">
@@ -34,7 +32,6 @@ function P_Home() {
 
       <AdvertSection />
 
-      <Footer />
     </div>
   );
 }

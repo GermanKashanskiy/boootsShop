@@ -1,24 +1,21 @@
 import React, { FC } from "react";
-import Header from "../../components/header/Header";
-import Footer from "../../components/footer/Footer";
-import { IProduct } from "../../api/IProduct";
 import ProductSection from "./shared/ProductSectoin";
 import '../../styles/style.css';
 import './style/style.css';
 import ProductCatalog from "./shared/ProductCatalog";
+import { useParams } from "react-router";
+import { UseProductData } from "../../api/UseProductData";
 
-const Product: FC<{ item: IProduct }> = ({ item }) => {
+const Product = () => {
+  const { article } = useParams<{ article: string }>();
+  const productItem = article ? UseProductData.getProductWithArticle(article) : undefined;
+
   return (
     <div>
-      <Header />
-
-      <ProductSection productItem={item} />
-
+      {productItem && <ProductSection productItem={productItem} />}
       <ProductCatalog />
-
-      <Footer />
     </div>
   );
 }
 
-export default Product; 
+export default Product;

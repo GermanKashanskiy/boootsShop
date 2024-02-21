@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeaderLogo = () => {
     return (
         <div className="header-logo font-archivo">
-            BOOOTSHOP
+            <Link to="/">BOOOTSHOP</Link>
         </div>
     )
 }
