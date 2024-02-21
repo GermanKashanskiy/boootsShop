@@ -1,8 +1,9 @@
 import React, { FC, useState, useEffect } from "react";
 import { IProduct } from "../../../api/IProduct";
-import { Breadcrumbs, Container, Grid, Link, ToggleButton, ToggleButtonGroup, Typography } from "@mui/material";
+import { Breadcrumbs, Container, Grid, ToggleButton, ToggleButtonGroup, Typography } from "@mui/material";
 import { BREADCRUMB_SEPARATOR } from './ProductSectionConstants';
 import { useProductSectionLogic } from './ProductSectionLogic';
+import { Link } from "react-router-dom";
 
 
 const ProductSection: FC<{ productItem: IProduct }> = ({ productItem }) => {
@@ -13,7 +14,8 @@ const ProductSection: FC<{ productItem: IProduct }> = ({ productItem }) => {
     <section id="prod-section">
       <Container>
         <Breadcrumbs separator={BREADCRUMB_SEPARATOR} style={{ color: "#9e9b98" }} aria-label="breadcrumb" className="no-copy" id="breadcrumb-line">
-          <Link underline="none" style={{ color: "#9e9b98" }} href={productItem.brand.page}>{productItem.brand.name}</Link>
+          <Link to={"/"} style={{ color: "#9e9b98" }}>HOME</Link>
+          <Link to={"/" + "brands/" + productItem.brand.articul} style={{ color: "#9e9b98" }}>{productItem.brand.name}</Link>
           <Typography color="text.primary" style={{ color: "#9e9b98" }}>{productItem.name} / {productItem.articul}</Typography>
         </Breadcrumbs>
 

@@ -1,0 +1,18 @@
+#brand-info #breadcrumb-line {
+  margin-top: 3rem;
+}
+#brand-info #brand-name {
+  font-weight: 900;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+#brand-info #brand-logo {
+  width: 20%;
+}
+#brand-info #brand-logo img {
+  width: 100%;
+}
+#brand-info #collections-info {
+  font-size: 1.5rem;
+  font-weight: 700;
+}/*# sourceMappingURL=style.css.map */

@@ -11,10 +11,10 @@ const Product = () => {
   const productItem = article ? UseProductData.getProductWithArticle(article) : undefined;
 
   return (
-    <div>
+    <>
       {productItem && <ProductSection productItem={productItem} />}
       <ProductCatalog />
-    </div>
+    </>
   );
 }
 

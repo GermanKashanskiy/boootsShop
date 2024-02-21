@@ -5,8 +5,8 @@ export const brands: IBrand[] = [
         articul: 'nke',
         name: 'NIKE',
         page: '',
-        logo: '/DB/brands/nike.png',
-        image: '/DB/brands/nike-bg.png',
+        logo: 'nike.png',
+        image: 'nike-bg.png',
         collections: 3
     },
     {
