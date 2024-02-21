@@ -1,6 +1,6 @@
 {
   "short_name": "BoootShop",
-  "name": "Create React App Sample",
+  "name": "BoootShop. Shop of best boots",
   "icons": [
     {
       "src": "logo360.png",
@@ -11,5 +11,5 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#FBFBFB"
 }
