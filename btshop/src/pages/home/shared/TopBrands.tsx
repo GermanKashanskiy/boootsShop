@@ -2,6 +2,7 @@ import React from "react";
 import BrandItem from "./brand-item/BrandItem";
 import { brands } from "../../../api/data/brands.data";
 import { Container } from "@mui/material";
+import { Link } from "react-router-dom";
 
 const TopBrands = () => {
   return (
@@ -16,7 +17,7 @@ const TopBrands = () => {
             <BrandItem brand={brands[3]} />
           </div>
           <div className="catalog-section-btn">
-            <a href="">SEE ALL BRANDS</a>
+            <Link to={"/brands/"}>SEE ALL BRANDS</Link>
           </div>
         </div>
       </Container>

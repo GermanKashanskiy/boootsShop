@@ -61,6 +61,10 @@
   text-align: left;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .dir-column {
   flex-direction: column;
 }

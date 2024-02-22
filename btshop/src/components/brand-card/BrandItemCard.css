@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+#brand-item {
+  width: 33.3333333333%;
+  background-color: rgb(241, 241, 241);
+  border-radius: 15px;
+}
+#brand-item #brand-info-text {
+  width: 50%;
+  margin-left: 1.5rem;
+}
+#brand-item #brand-info-text #brand-name {
+  font-weight: 900;
+  font-size: 2rem;
+}
+#brand-item #brand-info-text #brand-coll-ammount {
+  font-weight: 200;
+}
+#brand-item #brand-logo {
+  margin-right: 1.5rem;
+}
+#brand-item #brand-logo img {
+  width: 5rem;
+}
+
+@media (max-width: 992px) {
+  #brand-info-text {
+    margin-left: 1rem;
+  }
+  #brand-info-text #brand-name {
+    font-size: 1.8rem;
+  }
+  #brand-logo {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 900px) {
+  #brand-logo {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #brand-item {
+    width: 66.6666666667%;
+  }
+  #brand-item #brand-logo {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  #brand-item #brand-logo {
+    display: none;
+  }
+}
+@media (max-width: 340px) {
+  #brand-item #brand-info-text #brand-name {
+    font-size: 8vw;
+  }
+}/*# sourceMappingURL=BrandItemCard.css.map */

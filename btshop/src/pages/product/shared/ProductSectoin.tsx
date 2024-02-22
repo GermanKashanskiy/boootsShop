@@ -15,7 +15,8 @@ const ProductSection: FC<{ productItem: IProduct }> = ({ productItem }) => {
       <Container>
         <Breadcrumbs separator={BREADCRUMB_SEPARATOR} style={{ color: "#9e9b98" }} aria-label="breadcrumb" className="no-copy" id="breadcrumb-line">
           <Link to={"/"} style={{ color: "#9e9b98" }}>HOME</Link>
-          <Link to={"/" + "brands/" + productItem.brand.articul} style={{ color: "#9e9b98" }}>{productItem.brand.name}</Link>
+          <Link to={"/brands/"} style={{ color: "#9e9b98" }}>BRANDS</Link>
+          <Link to={"/brands/" + productItem.brand.articul} style={{ color: "#9e9b98" }}>{productItem.brand.name}</Link>
           <Typography color="text.primary" style={{ color: "#9e9b98" }}>{productItem.name} / {productItem.articul}</Typography>
         </Breadcrumbs>
 

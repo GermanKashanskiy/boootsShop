@@ -10,7 +10,8 @@ const Brandinfo: FC<{ brandItem: IBrand }> = ({ brandItem }) => {
       <Container>
         <Breadcrumbs separator={BREADCRUMB_SEPARATOR} style={{ color: "#9e9b98" }} aria-label="breadcrumb" className="no-copy" id="breadcrumb-line">
           <Link to={"/"} style={{ color: "#9e9b98" }}>HOME</Link>
-          <Typography color="text.primary" style={{ color: "#9e9b98" }}>{brandItem.name} / {brandItem.articul}</Typography>
+          <Link to={"/brands/"} style={{ color: "#9e9b98" }}>BRANDS</Link>
+          <Typography color="text.primary" style={{ color: "#9e9b98" }}>{brandItem.name}</Typography>
         </Breadcrumbs>
 
         <div className="d-flex justify-space-between">
@@ -23,6 +24,8 @@ const Brandinfo: FC<{ brandItem: IBrand }> = ({ brandItem }) => {
 
         <div id="collections-info" className="font-archivo color-black">
           Collections on store: {brandItem.collections}
+          <br />
+          Article: {brandItem.articul}
         </div>
       </Container>
     </section>
