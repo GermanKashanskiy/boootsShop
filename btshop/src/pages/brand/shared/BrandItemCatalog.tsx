@@ -7,7 +7,9 @@ const BrandItemCatalog = () => {
   return (
     <section id="brand-item-catalog" className="mt-5">
       <Container>
-        <div className="d-flex flex-wrap">
+        <div className="d-flex flex-wrap justify-center">
+
+          {/* Next to change: auto check items and auto add items */}
           <ProductCardItem item={products[0]} />
           <ProductCardItem item={products[0]} />
           <ProductCardItem item={products[0]} />

@@ -15,4 +15,9 @@
 #brand-info #collections-info {
   font-size: 1.5rem;
   font-weight: 700;
+}
+@media (max-width: 400px) {
+  #brand-info #brand-logo img {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
