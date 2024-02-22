@@ -12,7 +12,6 @@ const Brand = () => {
 
   return (
     <>
-      {/* NEED TO FIX. ALL BRAND PAGES ITS NIKE */}
       {brandItem && <Brandinfo brandItem={brandItem} />}
       <BrandItemCatalog />
     </>

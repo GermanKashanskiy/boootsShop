@@ -13,24 +13,24 @@ export const brands: IBrand[] = [
         articul: 'adi',
         name: 'ADIDAS',
         page: '',
-        logo: '/DB/brands/adidas.png',
-        image: '/DB/brands/adidas-bg.png',
+        logo: 'adidas.png',
+        image: 'adidas-bg.png',
         collections: 1
     },
     {
         articul: 'cnv',
         name: 'CONVERSE',
         page: '',
-        logo: '/DB/brands/converse.png',
-        image: '/DB/brands/converse-bg.png',
+        logo: 'converse.png',
+        image: 'converse-bg.png',
         collections: 0
     },
     {
         articul: 'van',
         name: 'VANS',
         page: '',
-        logo: '/DB/brands/vans.png',
-        image: '/DB/brands/vans-bg.png',
+        logo: 'vans.png',
+        image: 'vans-bg.png',
         collections: 0
     }
 ]
