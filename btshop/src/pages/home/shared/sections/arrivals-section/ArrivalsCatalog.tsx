@@ -1,6 +1,7 @@
 import React from "react";
-import CardItem from "./card-item/CardItem";
-import { products } from "../../../api/data/products.data";
+import CardItem from "../../card-item/CardItem";
+import { products } from "../../../../../api/data/products.data";
+import './style/arrivals-section.css';
 
 const ArrivalsCatalog = () => {
   return (

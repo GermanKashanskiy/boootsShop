@@ -1,7 +1,8 @@
 import { Container } from "@mui/material";
 import React from "react";
-import CardItem from "./card-item/CardItem";
-import { products } from "../../../api/data/products.data";
+import CardItem from "../../card-item/CardItem";
+import { products } from "../../../../../api/data/products.data";
+import './style/featured-section.css';
 
 const FeaturedCatalog = () => {
   return (

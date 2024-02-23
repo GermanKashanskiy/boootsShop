@@ -1,7 +1,8 @@
 import React from "react";
-import { products } from "../../../api/data/products.data";
+import { products } from "../../../../../api/data/products.data";
 import { FindBestseller } from "./BestsellerItemSearch";
 import { Container, Grid } from "@mui/material";
+import './style/bestseller-section.css';
 
 const Bestseller = () => {
   const bestItem = FindBestseller(products);

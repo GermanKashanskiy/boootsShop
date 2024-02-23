@@ -1,5 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
+import './style/advert-section.css';
 
 const AdvertSection = () => {
   return (

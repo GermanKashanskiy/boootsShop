@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import './BrandItemCard.css'
+import './style/BrandItemCard.css';
 import '../../styles/style.css';
 import { SvgIcon } from "@mui/material";
 import { Link } from "react-router-dom";

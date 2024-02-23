@@ -3,7 +3,7 @@
   font-size: 5rem;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .narrivals-text {
     font-size: 8vw !important;
   }

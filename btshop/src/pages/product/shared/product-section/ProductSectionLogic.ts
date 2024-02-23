@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import useWindowDimensions from "../../shared/UseWindowDimentions";
+import useWindowDimensions from "../../../shared/UseWindowDimentions";
 
 export type Orientation = 'vertical' | 'horizontal';
 

@@ -1,0 +1,81 @@
+.bestseller-section .betss-text-big {
+  font-weight: 800;
+  font-size: 3.5rem;
+}
+.bestseller-section .betss-text-small {
+  font-weight: 200;
+}
+.bestseller-section .betss-img-row1 {
+  background-color: #ebe8db;
+  border-radius: 20px;
+}
+.bestseller-section .betss-img-row1 img {
+  width: 90%;
+}
+.bestseller-section .betss-img-row2 {
+  background-color: #ebe8db;
+  border-radius: 20px;
+}
+.bestseller-section .betss-img-row2 img {
+  width: 100%;
+}
+.bestseller-section .betss-item-info-text .betss-brand-name {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.bestseller-section .betss-item-info-text .betss-item-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.bestseller-section .betss-item-price {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+.bestseller-section .betss-add-btn {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.bestseller-section .betss-add-btn a {
+  color: #171717;
+  text-decoration: none;
+  border: 1px solid #171717;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 3.5rem;
+}
+.bestseller-section .betss-add-btn a:hover {
+  color: #FBFBFB;
+  background-color: #171717;
+}
+
+@media (max-width: 768px) {
+  .bestseller-section .betss-text-big {
+    font-size: 8vw !important;
+  }
+  .betss-add-btn a {
+    font-size: 3vw !important;
+    padding: 1rem 5vw !important;
+  }
+}
+@media (max-width: 576px) {
+  .bestseller-section .betss-text-big {
+    font-size: 15vw !important;
+  }
+  .bestseller-section .betss-text-small {
+    display: none;
+  }
+  .bestseller-section .betss-img-row1 {
+    display: none;
+  }
+  .betss-item-info-text .betss-item-name {
+    font-size: 7vw !important;
+  }
+  .betss-item-price {
+    font-size: 6.5vw !important;
+  }
+  .betss-add-btn a {
+    font-size: 5vw !important;
+    padding: 1rem 10vw !important;
+  }
+}/*# sourceMappingURL=bestseller-section.css.map */

@@ -1,7 +1,8 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import ProductCardItem from "../../../components/product-card/ProductCardItem";
-import { products } from "../../../api/data/products.data";
+import './style/style.css';
+import ProductCardItem from "../../../../components/product-card/ProductCardItem";
+import { products } from "../../../../api/data/products.data";
 
 const ProductCatalog = () => {
   return (

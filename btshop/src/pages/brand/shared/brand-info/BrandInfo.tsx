@@ -1,8 +1,9 @@
 import React, { FC } from "react";
-import { IBrand } from "../../../api/IBrand";
+import { IBrand } from "../../../../api/IBrand";
 import { Breadcrumbs, Container, Typography } from "@mui/material";
 import { BREADCRUMB_SEPARATOR } from "./BrandSectionConstants";
 import { Link } from "react-router-dom";
+import './style/brand-info.css';
 
 const Brandinfo: FC<{ brandItem: IBrand }> = ({ brandItem }) => {
   return (

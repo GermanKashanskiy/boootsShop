@@ -1,12 +1,10 @@
 import React from "react";
-import Header from "../../components/header/Header";
 import "./style/home-style.css";
-import ArrivalsCatalog from "./shared/ArrivalsCatalog";
-import TopBrands from "./shared/TopBrands";
-import Bestseller from "./shared/Bestseller";
-import FeaturedCatalog from "./shared/FeaturedCatalog";
-import AdvertSection from "./shared/AdvertSection";
-import Footer from "../../components/footer/Footer";
+import ArrivalsCatalog from "./shared/sections/arrivals-section/ArrivalsCatalog";
+import TopBrands from "./shared/sections/top-brands-section/TopBrands";
+import Bestseller from "./shared/sections/bestseller-section/Bestseller";
+import FeaturedCatalog from "./shared/sections/featured-section/FeaturedCatalog";
+import AdvertSection from "./shared/sections/advert-section/AdvertSection";
 
 function P_Home() {
   return (

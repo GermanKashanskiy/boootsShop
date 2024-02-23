@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import './product-card-item.css'
+import './style/product-card-item.css';
 import '../../styles/style.css';
 import { IProduct } from "../../api/IProduct";
 import { Link } from "react-router-dom";

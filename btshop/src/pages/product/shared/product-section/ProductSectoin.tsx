@@ -1,10 +1,10 @@
 import React, { FC, useState, useEffect } from "react";
-import { IProduct } from "../../../api/IProduct";
+import { IProduct } from "../../../../api/IProduct";
 import { Breadcrumbs, Container, Grid, ToggleButton, ToggleButtonGroup, Typography } from "@mui/material";
 import { BREADCRUMB_SEPARATOR } from './ProductSectionConstants';
 import { useProductSectionLogic } from './ProductSectionLogic';
 import { Link } from "react-router-dom";
-
+import './style/product-section.css';
 
 const ProductSection: FC<{ productItem: IProduct }> = ({ productItem }) => {
 

@@ -1,10 +1,10 @@
-.top-brands-text {
+.featured-text {
   font-weight: 800;
   font-size: 5rem;
 }
 
-@media (max-width:576px) {
-  .top-brands-text {
+@media (max-width: 576px) {
+  .featured-text {
     font-size: 8vw;
   }
 }

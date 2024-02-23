@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moirai+One&display=swap");
 .intro-section-container {
   background-image: url("../../../../public/images/Sneakers-Section-Background.jpg");
   background-size: cover;
@@ -34,16 +37,6 @@
     display: none !important;
   }
 }
-.narrivals-text {
-  font-weight: 800;
-  font-size: 5rem;
-}
-
-@media (max-width: 768px) {
-  .narrivals-text {
-    font-size: 8vw !important;
-  }
-}
 /* classes from src/styles/style.css were not used due to the fact that the button is used more than once */
 .catalog-section-btn {
   margin-top: 3rem;
@@ -69,54 +62,169 @@
     font-size: 5vw;
   }
 }
-.top-brands-text {
+.p-home .intro-section-container {
+  background-image: url("../../../../public/images/Sneakers-Section-Background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.p-home .intro-section-container .intro-section_store-name {
+  padding: 6rem;
+  text-align: center;
+  color: #FBFBFB;
+  text-shadow: 0px -20px 3px #171717;
+  font-family: "Moirai One", system-ui;
+  font-size: 7vw;
+}
+.p-home .intro-section-container .intro-section_shop-now {
+  font-family: "Archivo", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 35vh 10vw 6vh 10vw;
+}
+.p-home .intro-section-container .intro-section_shop-now .shop-now_text-container {
+  color: #FBFBFB;
+  font-weight: 200;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.p-home .intro-section-container .intro-section_shop-now a {
+  background-color: #FBFBFB;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #171717;
+  font-weight: 800;
+  font-size: 2rem;
+  width: 17rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-home .narrivals-section {
+  text-align: center;
+}
+.p-home .narrivals-section .narrivals-text {
+  margin-top: 6vw;
+  margin-bottom: 3vw;
+  color: #171717;
+  font-family: "Archivo", sans-serif;
   font-weight: 800;
   font-size: 5rem;
 }
-
-@media (max-width: 576px) {
-  .top-brands-text {
-    font-size: 8vw;
-  }
+.p-home .narrivals-section .arrivals-catalog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.bestseller-section .betss-text-big {
+
+.catalog-section-btn {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+.catalog-section-btn a {
+  font-family: "Archivo", sans-serif;
+  color: #171717;
+  text-decoration: none;
+  border: 1px solid #171717;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+}
+.catalog-section-btn a:hover {
+  color: #FBFBFB;
+  background-color: #171717;
+}
+
+.brands-section {
+  text-align: center;
+}
+.brands-section .top-brands-text {
+  margin-top: 6vw;
+  margin-bottom: 3vw;
+  color: #171717;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+}
+.brands-section .top-brands-catalog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bestseller-section .betss-rows {
+  display: flex;
+  justify-content: center;
+}
+.bestseller-section .betss-rows .betss-row1 {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #171717;
+  font-family: "Archivo", sans-serif;
+}
+.bestseller-section .betss-rows .betss-row1 .betss-text-big {
   font-weight: 800;
   font-size: 3.5rem;
 }
-.bestseller-section .betss-text-small {
+.bestseller-section .betss-rows .betss-row1 .betss-text-small {
+  margin-top: 1.5rem;
   font-weight: 200;
 }
-.bestseller-section .betss-img-row1 {
-  background-color: #ebe8db;
+.bestseller-section .betss-rows .betss-row1 .betss-img-row1 {
+  margin-top: 1.5rem;
+  background-color: rgb(235, 232, 219);
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.bestseller-section .betss-img-row1 img {
+.bestseller-section .betss-rows .betss-row1 .betss-img-row1 img {
   width: 90%;
 }
-.bestseller-section .betss-img-row2 {
-  background-color: #ebe8db;
+.bestseller-section .betss-rows .betss-row2 .best-item {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  color: #171717;
+  font-family: "Archivo", sans-serif;
+}
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-img-row2 {
+  background-color: rgb(235, 232, 219);
   border-radius: 20px;
 }
-.bestseller-section .betss-img-row2 img {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-img-row2 img {
   width: 100%;
 }
-.bestseller-section .betss-item-info-text .betss-brand-name {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-item-info .betss-item-info-text .betss-brand-name {
+  margin-top: 1rem;
   font-weight: 300;
   font-size: 1rem;
 }
-.bestseller-section .betss-item-info-text .betss-item-name {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-item-info .betss-item-info-text .betss-item-name {
+  margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 800;
 }
-.bestseller-section .betss-item-price {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-item-info .betss-item-price {
+  margin-top: 1rem;
   font-size: 1.8rem;
   font-weight: 800;
 }
-.bestseller-section .betss-add-btn {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-add-btn {
   margin-top: 2.5rem;
   text-align: center;
 }
-.bestseller-section .betss-add-btn a {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-add-btn a {
   color: #171717;
   text-decoration: none;
   border: 1px solid #171717;
@@ -125,51 +233,28 @@
   font-weight: 700;
   padding: 1rem 3.5rem;
 }
-.bestseller-section .betss-add-btn a:hover {
+.bestseller-section .betss-rows .betss-row2 .best-item .betss-add-btn a:hover {
   color: #FBFBFB;
   background-color: #171717;
 }
 
-@media (max-width: 768px) {
-  .bestseller-section .betss-text-big {
-    font-size: 8vw !important;
-  }
-  .betss-add-btn a {
-    font-size: 3vw !important;
-    padding: 1rem 5vw !important;
-  }
+.featured-section {
+  text-align: center;
 }
-@media (max-width: 576px) {
-  .bestseller-section .betss-text-big {
-    font-size: 15vw !important;
-  }
-  .bestseller-section .betss-text-small {
-    display: none;
-  }
-  .bestseller-section .betss-img-row1 {
-    display: none;
-  }
-  .betss-item-info-text .betss-item-name {
-    font-size: 7vw !important;
-  }
-  .betss-item-price {
-    font-size: 6.5vw !important;
-  }
-  .betss-add-btn a {
-    font-size: 5vw !important;
-    padding: 1rem 10vw !important;
-  }
-}
-.featured-text {
+.featured-section .featured-text {
+  margin-top: 6vw;
+  margin-bottom: 3vw;
+  color: #171717;
+  font-family: "Archivo", sans-serif;
   font-weight: 800;
   font-size: 5rem;
 }
-
-@media (max-width: 576px) {
-  .featured-text {
-    font-size: 8vw;
-  }
+.featured-section .featured-catalog {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 .advert-section .advert-bg {
   background-image: url("./../../../../public/images/6700881197.jpg");
   background-size: cover;
@@ -178,6 +263,8 @@
 }
 .advert-section .advert-bg .advert-text {
   margin-top: 12rem;
+  font-family: "Archivo", sans-serif;
+  color: #FBFBFB;
 }
 .advert-section .advert-bg .advert-text .advert-text-big {
   font-weight: 900;
@@ -193,7 +280,10 @@
   margin-bottom: 8rem;
 }
 .advert-section .advert-bg .advert-btn a {
+  font-family: "Archivo", sans-serif;
+  color: #171717;
   background-color: #FBFBFB;
+  text-decoration: none;
   border-radius: 50px;
   font-size: 1.5rem;
   font-weight: 800;
@@ -202,4 +292,62 @@
 .advert-section .advert-bg .advert-btn a:hover {
   color: #FBFBFB;
   background-color: #171717;
+}
+
+@media (max-width: 768px) {
+  .narrivals-section .narrivals-text {
+    font-size: 8vw !important;
+  }
+  .bestseller-section .betss-rows .betss-row1 .betss-text-big {
+    font-size: 8vw !important;
+  }
+  .bestseller-section .betss-rows .betss-add-btn a {
+    font-size: 3vw !important;
+    padding: 1rem 5vw !important;
+  }
+}
+@media (max-width: 576px) {
+  .intro-section-container .intro-section_store-name {
+    padding: 6rem 0 0 0 !important;
+  }
+  .intro-section-container .intro-section_shop-now {
+    padding: 37vh 10vw 6vh 10vw !important;
+  }
+  .intro-section-container .intro-section_shop-now a {
+    display: none !important;
+  }
+  .brands-section .top-brands-text {
+    font-size: 8vw;
+  }
+  .featured-section .featured-text {
+    font-size: 8vw;
+  }
+  .catalog-section-btn a {
+    font-size: 5vw;
+  }
+  .bestseller-section .betss-rows .betss-row1 .betss-text-big {
+    font-size: 15vw !important;
+  }
+  .bestseller-section .betss-rows .betss-row1 .betss-text-small {
+    display: none;
+  }
+  .bestseller-section .betss-rows .betss-row1 .betss-img-row1 {
+    display: none;
+  }
+  .bestseller-section .betss-rows .betss-item-info .betss-item-info-text .betss-item-name {
+    font-size: 7vw !important;
+  }
+  .bestseller-section .betss-rows .betss-item-info .betss-item-price {
+    font-size: 6.5vw !important;
+  }
+  .bestseller-section .betss-rows .betss-add-btn a {
+    font-size: 5vw !important;
+    padding: 1rem 10vw !important;
+  }
+}
+.not-coppy {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }/*# sourceMappingURL=home-style.css.map */
