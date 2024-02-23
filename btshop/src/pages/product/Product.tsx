@@ -3,12 +3,19 @@ import ProductSection from "./shared/product-section/ProductSectoin";
 import '../../styles/style.css';
 import ProductCatalog from "./shared/product-catalog/ProductCatalog";
 import { useParams } from "react-router";
-import { UseProductData } from "../../api/UseProductData";
+import { UseProductQuery } from "../../api/product/UseProductQuery";
 
 const Product = () => {
   const { article } = useParams<{ article: string }>();
-  const productItem = article ? UseProductData.getProductWithArticle(article) : undefined;
 
+  const { data: productItem, isLoading, isError } = UseProductQuery(article);
+
+  /*
+  As example how to make loading skeleton
+
+  if (isLoading) return <div>Loading...</div>;
+  if (isError) return <div>Error fetching product</div>;
+  */
   return (
     <>
       {productItem && <ProductSection productItem={productItem} />}

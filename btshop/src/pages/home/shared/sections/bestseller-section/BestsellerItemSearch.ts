@@ -1,4 +1,4 @@
-import { IProduct } from '../../../../../api/IProduct';
+import { IProduct } from '../../../../../api/product/IProduct';
 import { products } from '../../../../../api/data/products.data';
 
 export function FindBestseller(products: IProduct[]): IProduct | null {

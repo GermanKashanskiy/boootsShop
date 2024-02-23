@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import './CardItem.css'
-import { IProduct } from "../../../../api/IProduct";
+import { IProduct } from "../../../../api/product/IProduct";
 import { Link } from "react-router-dom";
 
 const CardItem: FC<{ item: IProduct }> = ({ item }) => {

@@ -1,4 +1,4 @@
-import { IProduct } from "../IProduct";
+import { IProduct } from "../product/IProduct";
 import { brands } from "./brands.data";
 
 export const products: IProduct[] = [

@@ -1,5 +1,5 @@
 import { IProduct } from "./IProduct";
-import { products } from "./data/products.data"
+import { products } from "../data/products.data"
 
 export const UseProductData = {
   getProductWithArticle: (article: string): IProduct | undefined => {

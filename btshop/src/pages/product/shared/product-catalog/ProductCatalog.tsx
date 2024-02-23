@@ -12,10 +12,9 @@ const ProductCatalog = () => {
         <div id="catalog-name">You might also like</div>
 
         <div className="d-flex justify-space-around flex-wrap">
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[1]} />
-          <ProductCardItem item={products[2]} />
-          <ProductCardItem item={products[3]} />
+          {
+            products.map(product => <ProductCardItem item={product} key={"product-item-"} />)
+          }
         </div>
       </Container>
     </div>
