@@ -1,18 +1,18 @@
 import React from "react";
 import { useParams } from "react-router";
-import { UseBrandData } from "../../api/UseBrandData";
 import '../../styles/style.css';
 import Brandinfo from "./shared/brand-info/BrandInfo";
 import BrandItemCatalog from "./shared/BrandItemCatalog";
+import { UseBrandWithArticleQuery } from "../../api/brand/UseBrandQuery";
 
 const Brand = () => {
   const { brandArticle } = useParams<{ brandArticle: string }>();
-  const brandItem = brandArticle ? UseBrandData.getBrandWithArticle(brandArticle) : undefined;
+  const { data: brandItem, isLoading, isError } = UseBrandWithArticleQuery(brandArticle);
 
   return (
     <>
       {brandItem && <Brandinfo brandItem={brandItem} />}
-      <BrandItemCatalog />
+      {brandItem && <BrandItemCatalog brandArticle={brandItem?.articul} />}
     </>
   );
 }

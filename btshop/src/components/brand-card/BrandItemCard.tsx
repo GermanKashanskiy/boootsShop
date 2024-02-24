@@ -3,7 +3,7 @@ import './style/BrandItemCard.css';
 import '../../styles/style.css';
 import { SvgIcon } from "@mui/material";
 import { Link } from "react-router-dom";
-import { IBrand } from "../../api/IBrand";
+import { IBrand } from "../../api/brand/IBrand";
 
 const BrandItemCard: FC<{ brand: IBrand }> = ({ brand }) => {
     return (

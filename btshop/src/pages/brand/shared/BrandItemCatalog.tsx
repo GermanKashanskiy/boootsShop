@@ -1,73 +1,17 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { FC } from "react";
 import ProductCardItem from "../../../components/product-card/ProductCardItem";
-import { products } from "../../../api/data/products.data";
+import { UseProductWithBrand } from "../../../api/product/UseProductData";
 
-const BrandItemCatalog = () => {
+const BrandItemCatalog: FC<{ brandArticle: string }> = ({ brandArticle }) => {
+
   return (
     <section id="brand-item-catalog" className="mt-5">
       <Container>
         <div className="d-flex flex-wrap justify-center">
-
-          {/* Next to change: auto check items and auto add items */}
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-          <ProductCardItem item={products[0]} />
-
+          {
+            UseProductWithBrand(brandArticle).map((product) => (<ProductCardItem item={product} key={product.articul} />))
+          }
         </div>
       </Container>
     </section>
@@ -75,3 +19,4 @@ const BrandItemCatalog = () => {
 }
 
 export default BrandItemCatalog;
+

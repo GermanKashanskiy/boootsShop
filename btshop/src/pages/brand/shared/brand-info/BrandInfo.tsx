@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { IBrand } from "../../../../api/IBrand";
+import { IBrand } from "../../../../api/brand/IBrand";
 import { Breadcrumbs, Container, Typography } from "@mui/material";
 import { BREADCRUMB_SEPARATOR } from "./BrandSectionConstants";
 import { Link } from "react-router-dom";

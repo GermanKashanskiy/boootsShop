@@ -1,5 +1,5 @@
 import { IBrand } from "./IBrand";
-import { brands } from "./data/brands.data";
+import { brands } from "../data/brands.data";
 
 export const UseBrandData = {
   getBrandWithArticle: (brandArticle: string): IBrand | undefined => {

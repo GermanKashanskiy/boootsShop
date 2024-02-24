@@ -5,19 +5,9 @@ import BrandItemCard from "../../../components/brand-card/BrandItemCard";
 const BrandsCatalog = () => {
   return (
     <section className="d-flex flex-wrap justify-center">
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
-      <BrandItemCard brand={brands[0]} />
+      {
+        brands.map(brand => <BrandItemCard brand={brand} key={"brand-item-"} />)
+      }
     </section>
   );
 }

@@ -1,4 +1,4 @@
-import { IBrand } from "../IBrand"
+import { IBrand } from "../brand/IBrand"
 
 export interface IProduct {
     articul: string
