@@ -2,6 +2,7 @@ import React from "react";
 import CardItem from "../../card-item/CardItem";
 import { products } from "../../../../../api/data/products.data";
 import './style/arrivals-section.css';
+import { Link } from "react-router-dom";
 
 const ArrivalsCatalog = () => {
   return (
@@ -13,7 +14,7 @@ const ArrivalsCatalog = () => {
         <CardItem item={products[2]} />
       </div>
       <div className="catalog-section-btn">
-        <a href="">SEE ALL PRODUCTS</a>
+        <Link to="/products/">SEE ALL PRODUCTS</Link>
       </div>
     </section>
   );

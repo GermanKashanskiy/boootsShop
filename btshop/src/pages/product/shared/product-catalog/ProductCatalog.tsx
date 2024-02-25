@@ -1,4 +1,4 @@
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 import React from "react";
 import './style/style.css';
 import ProductCardItem from "../../../../components/product-card/ProductCardItem";

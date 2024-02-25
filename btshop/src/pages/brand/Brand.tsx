@@ -7,7 +7,7 @@ import { UseBrandWithArticleQuery } from "../../api/brand/UseBrandQuery";
 
 const Brand = () => {
   const { brandArticle } = useParams<{ brandArticle: string }>();
-  const { data: brandItem, isLoading, isError } = UseBrandWithArticleQuery(brandArticle);
+  const { data: brandItem /*, isLoading, isError */ } = UseBrandWithArticleQuery(brandArticle);
 
   return (
     <>

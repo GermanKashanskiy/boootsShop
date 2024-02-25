@@ -1,8 +1,8 @@
-import { Container } from "@mui/material";
 import React from "react";
 import CardItem from "../../card-item/CardItem";
 import { products } from "../../../../../api/data/products.data";
 import './style/featured-section.css';
+import { Link } from "react-router-dom";
 
 const FeaturedCatalog = () => {
   return (
@@ -14,7 +14,7 @@ const FeaturedCatalog = () => {
         <CardItem item={products[2]} />
       </div>
       <div className="catalog-section-btn">
-        <a href="">SEE ALL PRODUCTS</a>
+        <Link to="/products/">SEE ALL PRODUCTS</Link>
       </div>
     </section>
   );

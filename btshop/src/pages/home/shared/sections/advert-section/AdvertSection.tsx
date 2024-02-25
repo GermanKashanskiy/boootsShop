@@ -1,6 +1,7 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
 import './style/advert-section.css';
+import { Link } from "react-router-dom";
 
 const AdvertSection = () => {
   return (
@@ -16,7 +17,7 @@ const AdvertSection = () => {
                   the hottest shoe trends.
                 </div>
                 <div className="advert-btn">
-                  <a href="" className="font-archivo color-black no-text-decoration">SHOP NOW</a>
+                  <Link to="/products/" className="font-archivo color-black no-text-decoration">SHOP NOW</Link>
                 </div>
               </div>
             </Grid>

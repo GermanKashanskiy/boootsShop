@@ -5,6 +5,7 @@ import Product from "../pages/product/Product";
 import ErrorBoundary from "../pages/404/ErrorBoundary";
 import Brand from "../pages/brand/Brand";
 import Brands from "../pages/brands/Brands";
+import Products from "../pages/products/Products";
 
 
 export const router = createBrowserRouter([
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "", element: <Home /> },
+      { path: "products", element: <Products /> },
       { path: "product/:article", element: <Product /> },
       { path: "brands", element: <Brands /> },
       { path: "brands/:brandArticle", element: <Brand /> },

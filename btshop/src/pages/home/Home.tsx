@@ -5,6 +5,7 @@ import TopBrands from "./shared/sections/top-brands-section/TopBrands";
 import Bestseller from "./shared/sections/bestseller-section/Bestseller";
 import FeaturedCatalog from "./shared/sections/featured-section/FeaturedCatalog";
 import AdvertSection from "./shared/sections/advert-section/AdvertSection";
+import { Link } from "react-router-dom";
 
 function P_Home() {
   return (
@@ -16,7 +17,7 @@ function P_Home() {
             Unleash your inner fashionista with our curated collection of the
             hottest shoe trends.
           </div>
-          <a href="" className="d-flex items-center justify-center no-text-decoration color-black">SHOP NOW</a>
+          <Link to="/products/" className="d-flex items-center justify-center no-text-decoration color-black">SHOP NOW</Link>
         </div>
       </section>
 
