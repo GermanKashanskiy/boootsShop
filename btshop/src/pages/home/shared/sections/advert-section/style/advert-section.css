@@ -4,27 +4,22 @@
   background-position: center;
   text-align: left;
 }
-
 .advert-section .advert-bg .advert-text {
   margin-top: 12rem;
 }
-
 .advert-section .advert-bg .advert-text .advert-text-big {
   font-weight: 900;
   font-size: 5rem;
 }
-
 .advert-section .advert-bg .advert-text .advert-text-small {
   margin-top: 3rem;
   font-weight: 200;
   font-size: 1.5rem;
 }
-
 .advert-section .advert-bg .advert-btn {
   margin-top: 9rem;
   margin-bottom: 8rem;
 }
-
 .advert-section .advert-bg .advert-btn a {
   background-color: #FBFBFB;
   border-radius: 50px;
@@ -32,10 +27,7 @@
   font-weight: 800;
   padding: 1rem 2rem;
 }
-
 .advert-section .advert-bg .advert-btn a:hover {
   color: #FBFBFB;
   background-color: #171717;
-}
-
-/*# sourceMappingURL=advert-section.css.map */
+}/*# sourceMappingURL=advert-section.css.map */

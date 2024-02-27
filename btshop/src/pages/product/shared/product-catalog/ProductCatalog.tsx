@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import './style/style.css';
 import ProductCardItem from "../../../../components/product-card/ProductCardItem";
-import { products } from "../../../../api/data/products.data";
+import { UseAllProducts, UseProductsListWithProductsAmmount } from "../../../../api/product/UseProductData";
 
 const ProductCatalog = () => {
   return (
@@ -13,7 +13,9 @@ const ProductCatalog = () => {
 
         <div className="d-flex justify-space-around flex-wrap">
           {
-            products.map(product => <ProductCardItem item={product} key={"product-item-"} />)
+            UseProductsListWithProductsAmmount(4, UseAllProducts()).map(product => (
+              <ProductCardItem item={product} key={product.articul} />
+            ))
           }
         </div>
       </Container>

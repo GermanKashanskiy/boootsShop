@@ -6,13 +6,11 @@ import Header from "../../components/header/Header";
 const ErrorBoundary = () => {
   return (
     <>
-      <Header />
       <br />
       <br />
       <div className="no-copy d-flex justify-center">
         <img src="/images/404.jpg" alt="404 img" style={{ width: "30%" }} />
       </div >
-      <Footer />
     </>
   );
 }

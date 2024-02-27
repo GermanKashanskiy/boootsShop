@@ -37,5 +37,23 @@ export const products: IProduct[] = [
         price: 130,
         image: ['custom-nike-air-force-1-mid-by-you-shoes1.png', 'custom-nike-air-force-1-mid-by-you-shoes2.png', 'custom-nike-air-force-1-mid-by-you-shoes3.png', 'custom-nike-air-force-1-mid-by-you-shoes4.png'],
         sales: 1
+    },
+    {
+        articul: 'text',
+        name: 'NOT FOR SALE',
+        brand: brands[0],
+        description: "Let your design shine in satin, keep it classic in canvas or get luxe with leather. No matter what you choose, these AF-1s are all about you. 12 colour choices and an additional Gum option for the sole mean your design is destined to be one of a kind, just like you.",
+        price: 130,
+        image: [],
+        sales: 1
+    },
+    {
+        articul: 'text',
+        name: 'NOT FOR SALE',
+        brand: brands[0],
+        description: "Let your design shine in satin, keep it classic in canvas or get luxe with leather. No matter what you choose, these AF-1s are all about you. 12 colour choices and an additional Gum option for the sole mean your design is destined to be one of a kind, just like you.",
+        price: 130,
+        image: [],
+        sales: 1
     }
 ]

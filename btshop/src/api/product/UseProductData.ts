@@ -17,3 +17,13 @@ export const UseProductWithBrand = (brandArticle: string) => {
     products.filter(product => product.brand.articul === brandArticle)
   );
 }
+
+export const UseAllProducts = () => {
+  return (
+    products.filter(product => product.price != 0)
+  );
+}
+
+export const UseProductsListWithProductsAmmount = (productsAmount: number, productsList: IProduct[]) => {
+  return productsList.slice(0, productsAmount);
+}

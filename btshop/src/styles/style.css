@@ -77,6 +77,14 @@
   align-items: center;
 }
 
+.font-900 {
+  font-weight: 900;
+}
+
+.font-s-3 {
+  font-size: 3rem;
+}
+
 .no-copy {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -110,6 +118,10 @@
 
 .m-1 {
   margin: 1rem;
+}
+
+.m-2 {
+  margin: 2rem;
 }
 
 .mt-2 {
