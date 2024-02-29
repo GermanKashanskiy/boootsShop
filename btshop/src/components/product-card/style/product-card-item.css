@@ -1,6 +1,6 @@
 #card-container {
   background-color: rgb(241, 241, 241);
-  width: 20%;
+  width: 16.6666666667%;
   border-radius: 15px;
 }
 #card-container img {
@@ -23,17 +23,17 @@
 
 @media (max-width: 1200px) {
   #card-container {
-    width: 25%;
+    width: 20%;
   }
 }
 @media (max-width: 900px) {
   #card-container {
-    width: 33.3333333333%;
+    width: 25%;
   }
 }
 @media (max-width: 600px) {
   #card-container {
-    width: 40%;
+    width: 33.3333333333%;
   }
   #card-container a #item-brand {
     font-size: 4vw;

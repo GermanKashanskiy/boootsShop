@@ -24,6 +24,11 @@ export const UseAllProducts = () => {
   );
 }
 
+export const UseProductsBySales = () => {
+  return products.filter(product => product.price !== 0).sort((a, b) => b.sales - a.sales);
+}
+
+
 export const UseProductsListWithProductsAmmount = (productsAmount: number, productsList: IProduct[]) => {
   return productsList.slice(0, productsAmount);
 }

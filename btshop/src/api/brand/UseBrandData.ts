@@ -11,3 +11,13 @@ export const UseBrandData = {
     }
   }
 }
+
+export const UseAllBrands = () => {
+  return (
+    brands.filter(brand => brand.name != null)
+  );
+}
+
+export const UseBrandsListWithBrandsAmount = (brandsAmount: number, brandsList: IBrand[]) => {
+  return brandsList.slice(0, brandsAmount);
+}
