@@ -1,5 +1,5 @@
-import { Routes, Route } from "react-router-dom";
-import React, { useState } from 'react';
+import { Routes, Route, useLocation } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
 import App from "../App";
 import Home from "../pages/home/Home";
 import Product from "../pages/product/Product";
@@ -13,9 +13,13 @@ export const AuthContext = React.createContext({
   setIsAuthenticated: (value: boolean) => { }
 });
 
-
 export const Router = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   return (
     <AuthContext.Provider value={{ isAuthenticated, setIsAuthenticated }}>
@@ -35,4 +39,3 @@ export const Router = () => {
 };
 
 export default Router;
-
