@@ -7,6 +7,7 @@ import ErrorBoundary from "../pages/404/ErrorBoundary";
 import Brand from "../pages/brand/Brand";
 import Brands from "../pages/brands/Brands";
 import Products from "../pages/products/Products";
+import Catalog from "../pages/catalog/Catalog";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
@@ -26,6 +27,7 @@ export const Router = () => {
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
+          <Route path="catalog/:pageNum" element={<Catalog />} />
           <Route path="products" element={<Products />} />
           <Route path="product/:article" element={<Product />} />
           <Route path="brands" element={<Brands />} />
