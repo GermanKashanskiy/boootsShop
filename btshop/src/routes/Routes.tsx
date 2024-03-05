@@ -8,6 +8,7 @@ import Brand from "../pages/brand/Brand";
 import Brands from "../pages/brands/Brands";
 import Products from "../pages/products/Products";
 import Catalog from "../pages/catalog/Catalog";
+import Login from "../pages/login/Login";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
@@ -32,7 +33,7 @@ export const Router = () => {
           <Route path="product/:article" element={<Product />} />
           <Route path="brands" element={<Brands />} />
           <Route path="brands/:brandArticle" element={<Brand />} />
-          {/*<Route path="login" element={<Login />} />*/}
+          <Route path="login" element={<Login />} />
           <Route path="*" element={<ErrorBoundary />} />
         </Route>
       </Routes>
