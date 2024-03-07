@@ -7,7 +7,6 @@ const Login = () => {
   return (
     <div className="d-flex justify-center mt-5">
       <div id="login-container" className="d-flex">
-
         <form action="#" id="login-form" className="d-flex dir-column section-padding">
           <label htmlFor="chk" aria-hidden="true" className="font-archivo font-900 mb-5">LOGIN</label>
           <input type="email" name="email" placeholder="EMAIL" className="mt-1" required />
@@ -18,10 +17,9 @@ const Login = () => {
           <img src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png" alt="login image" />
         </div>
         <div id="right-img" className="section-padding">
-          <Link to={"/"} id="form-type-btn" className="font-archivo font-900 color-white">REGISTER</Link>
+          <Link to={"/sign-up"} id="form-type-btn" className="font-archivo font-900 color-white">REGISTER</Link>
         </div>
       </div>
-
     </div>
   );
 }

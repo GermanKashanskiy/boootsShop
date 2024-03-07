@@ -9,6 +9,7 @@ import Brands from "../pages/brands/Brands";
 import Products from "../pages/products/Products";
 import Catalog from "../pages/catalog/Catalog";
 import Login from "../pages/login/Login";
+import Register from "../pages/register/Register";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
@@ -33,7 +34,8 @@ export const Router = () => {
           <Route path="product/:article" element={<Product />} />
           <Route path="brands" element={<Brands />} />
           <Route path="brands/:brandArticle" element={<Brand />} />
-          <Route path="login" element={<Login />} />
+          <Route path="sign-in" element={<Login />} />
+          <Route path="sign-up" element={<Register />} />
           <Route path="*" element={<ErrorBoundary />} />
         </Route>
       </Routes>
