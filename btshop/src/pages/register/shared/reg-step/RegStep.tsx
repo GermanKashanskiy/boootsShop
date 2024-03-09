@@ -7,6 +7,9 @@ import { currentStep } from '../RegValidation';
 const StepController = () => {
   const [_currentStep] = useState(currentStep)
 
+
+  //doesn't work switch between steps
+
   switch (_currentStep) {
     case 0:
       return <BioStep />;

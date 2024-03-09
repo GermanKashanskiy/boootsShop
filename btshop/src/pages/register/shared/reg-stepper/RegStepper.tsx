@@ -69,10 +69,8 @@ const RegStepper = () => {
         </React.Fragment>
       ) : (
         <React.Fragment>
-          <div className="font-archivo font-900">STEP {_currentStep + 1}</div>
 
           <StepController />
-
 
           <Button color="inherit" disabled={_currentStep === 0} onClick={handleBack} sx={{ mr: 1 }}>Back</Button>
 
