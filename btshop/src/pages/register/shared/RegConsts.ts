@@ -1,3 +1,3 @@
 export const steps = ['BIO', 'LIVING PLACE', 'FAVORITES'];
 
-export const optionalStep = 2;
+export const optionalStep = 0;

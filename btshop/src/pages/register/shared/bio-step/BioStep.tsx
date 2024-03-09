@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { SetStepValid } from '../../../RegValidation';
+import { SetStepValid } from '../RegValidation';
 import './styles/bio-step.css';
-import { UseAccountWithEmail, UseAccountWithUsername } from '../../../../../../api/account/UseAccount';
+import { UseAccountWithEmail, UseAccountWithUsername } from '../../../../api/account/UseAccount';
 import { validPasswordBigLetter, validPasswordLength, validPasswordNumber, validPasswordSmallLetter } from './shared/PasswordValidation';
 
 interface FormData {
