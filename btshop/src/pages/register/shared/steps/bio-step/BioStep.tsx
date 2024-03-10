@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { SetStepValid } from '../RegValidation';
-import './styles/bio-step.css';
-import { UseAccountWithEmail, UseAccountWithUsername } from '../../../../api/account/UseAccount';
+import { SetStepValid } from '../../RegValidation';
+import '../style/style.css';
+import { UseAccountWithEmail, UseAccountWithUsername } from '../../../../../api/account/UseAccount';
 import { validPasswordBigLetter, validPasswordLength, validPasswordNumber, validPasswordSmallLetter } from './shared/PasswordValidation';
+import { newAccount } from '../../newAccount.data';
 
 interface FormData {
   username: string,
@@ -40,6 +41,9 @@ const BioStep = () => {
 
   const validateForm = () => {
     if (isUsNameValid == true && isEmailValid == true && PasswordValidation.passwordLen && PasswordValidation.passwordSLetter && PasswordValidation.passwordBLetter && PasswordValidation.passwordNums) {
+      newAccount.username = formData.username
+      newAccount.email = formData.email
+      newAccount.password = formData.password
       SetStepValid(true)
     } else {
       SetStepValid(false)

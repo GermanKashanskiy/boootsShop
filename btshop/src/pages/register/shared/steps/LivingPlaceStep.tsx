@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './style/style.css';
 import { SetStepValid } from "../RegValidation";
+import { newAccount } from "../newAccount.data";
 
 interface FormData {
   fname: string,
@@ -32,6 +33,13 @@ const LivingPlaceStep = () => {
 
   const regValidation = () => {
     if (isFNameValid == true && isLNameValid == true && isPhoneValid == true) {
+      newAccount.fName = formData.fname
+      newAccount.lName = formData.lname
+      newAccount.phone = formData.phoneNum
+      newAccount.country = formData.country
+      newAccount.city = formData.city
+      newAccount.street = formData.street
+      newAccount.building = formData.building
       SetStepValid(true)
     }
     else {
@@ -42,11 +50,9 @@ const LivingPlaceStep = () => {
   const validateFName = () => {
     if (formData.fname.length > 0) {
       setFNameValid(true)
-      console.log("tru")
     }
     else {
       setFNameValid(false)
-      console.log("fals")
     }
   }
 
@@ -89,7 +95,7 @@ const LivingPlaceStep = () => {
       <div id='form-container' className='d-flex dir-column'>
         <input type='text' name="fname" value={formData.fname} onChange={handleChange} placeholder='FIRST NAME*' className='mt-2' />
         <input type='text' name="lname" value={formData.lname} onChange={handleChange} placeholder='LAST NAME*' className='mt-2' />
-        <input type='tel' name="phoneNum" value={formData.phoneNum} onChange={handleChange} /*onFocus={ }*/ placeholder='PHONE NUMBER*' className='mt-2' />
+        <input type='tel' name="phoneNum" value={formData.phoneNum} onChange={handleChange} placeholder='PHONE NUMBER*' className='mt-2' />
         <input type='text' name="country" value={formData.country} onChange={handleChange} placeholder='COUNTRY' className='mt-2' />
         <input type='text' name="city" value={formData.city} onChange={handleChange} placeholder='CITY' className='mt-2' />
         <input type='text' name="street" value={formData.street} onChange={handleChange} placeholder='STREET' className='mt-2' />

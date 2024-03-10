@@ -7,9 +7,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { steps } from '../RegConsts';
 import { GetStepValid, GetisOptionalStepSkipped, SetStepValid, SetisOptionalStepSkipped, currentStep, isStepOptional, stepValid } from '../RegValidation';
-import BioStep from '../bio-step/BioStep';
-import LivingPlaceStep from '../living-step/LivingPlaceStep';
+import BioStep from '../steps/bio-step/BioStep';
+import LivingPlaceStep from '../steps/LivingPlaceStep';
 import FavoritesStep from '../FavoritesStep';
+import { AddNewAccount } from '../../../../api/account/UseAccount';
+import { newAccount } from '../newAccount.data';
 
 const RegStepper = () => {
   const [_currentStep, setCurrentStep] = React.useState(currentStep);
@@ -18,6 +20,10 @@ const RegStepper = () => {
     if (!GetStepValid() && !isStepOptional(_currentStep)) {
       // return error ... 
       return;
+    }
+
+    if (_currentStep == steps.length - 1) {
+      AddNewAccount(newAccount)
     }
 
     setCurrentStep((step) => step + 1)

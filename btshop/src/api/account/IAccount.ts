@@ -5,5 +5,9 @@ export interface IAccount {
   password: string,
   fName: string,
   lName: string,
-  phone: string
+  phone: string,
+  country: string,
+  city: string,
+  street: string,
+  building: string
 }
