@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './style/style.css';
+import { SetStepValid } from "../RegValidation";
 
 interface FormData {
   fname: string,
@@ -11,6 +12,9 @@ interface FormData {
   phoneNum: string
 }
 const LivingPlaceStep = () => {
+  const [isFNameValid, setFNameValid] = useState<boolean>();
+  const [isLNameValid, setLNameValid] = useState<boolean>();
+  const [isPhoneValid, setPhoneValid] = useState<boolean>();
   const [formData, setFormData] = useState<FormData>({
     fname: "",
     lname: "",
@@ -25,6 +29,60 @@ const LivingPlaceStep = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
+
+  const regValidation = () => {
+    if (isFNameValid == true && isLNameValid == true && isPhoneValid == true) {
+      SetStepValid(true)
+    }
+    else {
+      SetStepValid(false)
+    }
+  }
+
+  const validateFName = () => {
+    if (formData.fname.length > 0) {
+      setFNameValid(true)
+      console.log("tru")
+    }
+    else {
+      setFNameValid(false)
+      console.log("fals")
+    }
+  }
+
+  const validateLName = () => {
+    if (formData.lname.length > 0) {
+      setLNameValid(true)
+    }
+    else {
+      setLNameValid(false)
+    }
+  }
+
+  const validatePhone = () => {
+    if (formData.phoneNum.length) {
+      setPhoneValid(true)
+    }
+    else {
+      setPhoneValid(false)
+    }
+  }
+
+  React.useEffect(() => {
+    validateFName()
+  }, [formData.fname])
+
+  React.useEffect(() => {
+    validateLName()
+  }, [formData.lname])
+
+  React.useEffect(() => {
+    validatePhone()
+  }, [formData.phoneNum])
+
+  React.useEffect(() => {
+    regValidation()
+  }, [isFNameValid, isLNameValid, isPhoneValid])
 
   return (
     <div className='d-flex justify-space-around items-center mt-3 mb-5 font-archivo font-900'>

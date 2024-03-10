@@ -6,7 +6,7 @@ import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { steps } from '../RegConsts';
-import { GetStepValid, GetisOptionalStepSkipped, SetisOptionalStepSkipped, currentStep, isStepOptional, stepValid } from '../RegValidation';
+import { GetStepValid, GetisOptionalStepSkipped, SetStepValid, SetisOptionalStepSkipped, currentStep, isStepOptional, stepValid } from '../RegValidation';
 import BioStep from '../bio-step/BioStep';
 import LivingPlaceStep from '../living-step/LivingPlaceStep';
 import FavoritesStep from '../FavoritesStep';
@@ -21,6 +21,7 @@ const RegStepper = () => {
     }
 
     setCurrentStep((step) => step + 1)
+    SetStepValid(false)
   };
 
   const handleBack = () => {
