@@ -26,9 +26,6 @@
   background-color: transparent;
   color: #252525;
 }
-#login-container #login-form input:focus {
-  border: none !important;
-}
 #login-container #right-img {
   background-color: #252525;
   border-end-end-radius: 40px;

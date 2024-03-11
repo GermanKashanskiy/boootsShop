@@ -3,7 +3,7 @@ import Paper from '@mui/material/Paper';
 import HeaderSearch from './shared/HeaderSearch';
 import HeaderLogo from './shared/HeaderLogo';
 import Nav from './shared/Nav';
-import HeaderUser from './shared/HeaderUser';
+import HeaderUser from './shared/header-user/HeaderUser';
 import './style/Header.css'
 import '../../styles/style.css'
 

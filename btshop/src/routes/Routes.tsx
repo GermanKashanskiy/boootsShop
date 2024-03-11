@@ -10,15 +10,26 @@ import Products from "../pages/products/Products";
 import Catalog from "../pages/catalog/Catalog";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
+import { GetAuthorizedAccount } from "./AuthAccount";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
-  setIsAuthenticated: (value: boolean) => { }
+  setIsAuthenticated: (value: boolean) => { },
 });
 
 export const Router = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [authAccount] = useState(GetAuthorizedAccount);
   const location = useLocation();
+
+  useEffect(() => {
+    if (authAccount != null) {
+      setIsAuthenticated(true)
+    }
+    else {
+      setIsAuthenticated(false)
+    }
+  }, [authAccount])
 
   useEffect(() => {
     window.scrollTo(0, 0);
