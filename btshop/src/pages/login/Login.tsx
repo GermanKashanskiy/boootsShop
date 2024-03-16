@@ -3,7 +3,7 @@ import './style/style.css';
 import '../../styles/style.css';
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../routes/Routes";
-import { AuthorizeInAccount, GetAuthorizedAccount } from "../../routes/AuthAccount";
+import { AuthorizeInAccount } from "../../routes/AuthAccount";
 import { GetAccountWithUsernameNEmail } from "../../api/account/UseAccount";
 
 interface FormData {

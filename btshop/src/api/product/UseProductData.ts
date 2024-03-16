@@ -35,3 +35,11 @@ export const UseProductsListWithProductsAmmount = (productsAmount: number, produ
 export const UseProductAmount = () => {
   return products.length
 }
+
+export const UseNewArrivals = (productsAmount: number) => {
+  var newArrivals = []
+  for (let i = products.length - 1; i >= Math.max(0, products.length - productsAmount); i--) {
+    newArrivals.push(products[i])
+  }
+  return newArrivals
+}

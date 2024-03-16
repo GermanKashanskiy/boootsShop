@@ -2,7 +2,7 @@ import React from "react";
 import CardItem from "../../card-item/CardItem";
 import './style/arrivals-section.css';
 import { Link } from "react-router-dom";
-import { UseAllProducts, UseProductsListWithProductsAmmount } from "../../../../../api/product/UseProductData";
+import { UseAllProducts, UseNewArrivals, UseProductsListWithProductsAmmount } from "../../../../../api/product/UseProductData";
 
 const ArrivalsCatalog = () => {
   return (
@@ -10,7 +10,7 @@ const ArrivalsCatalog = () => {
       <div className="narrivals-text color-black font-archivo mt-6vw mb-3vw">NEW ARRIVALS</div>
       <div className="d-flex justify-center flex-wrap">
         {
-          UseProductsListWithProductsAmmount(3, UseAllProducts()).map(product => (
+          UseProductsListWithProductsAmmount(3, UseNewArrivals(3)).map(product => (
             <CardItem item={product} key={product.articul} />
           ))
         }
