@@ -35,7 +35,7 @@
   margin-top: 2.5rem;
   text-align: center;
 }
-.bestseller-section .betss-add-btn a {
+.bestseller-section .betss-add-btn button {
   color: #171717;
   text-decoration: none;
   border: 1px solid #171717;
@@ -44,7 +44,7 @@
   font-weight: 700;
   padding: 1rem 3.5rem;
 }
-.bestseller-section .betss-add-btn a:hover {
+.bestseller-section .betss-add-btn button:hover {
   color: #FBFBFB;
   background-color: #171717;
 }

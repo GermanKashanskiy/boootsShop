@@ -1,7 +1,13 @@
 import React, { FC } from "react";
 import { IProduct } from "../../../../../api/product/IProduct";
+import { AddToCart } from "../../../../../api/local/cart/UseCart";
 
 const ProductInfo: FC<{ productItem: IProduct }> = ({ productItem }) => {
+
+  const handleClick = () => {
+    AddToCart(productItem);
+  }
+
   return (
     <>
       <div id="product-info" className="mt-2">
@@ -22,7 +28,7 @@ const ProductInfo: FC<{ productItem: IProduct }> = ({ productItem }) => {
       </div>
       <div id="product-price-container" className="color-black font-archivo d-flex justify-space-between items-center mt-5">
         <div id="product-price"><span>&#36;</span>{productItem.price}</div>
-        <button>Add to cart</button>
+        <button onClick={handleClick}>Add to cart</button>
       </div>
     </>
   );

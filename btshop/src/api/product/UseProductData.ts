@@ -14,7 +14,7 @@ export const UseProductData = {
 
 export const UseProductWithBrand = (brandArticle: string) => {
   return (
-    products.filter(product => product.brand.articul === brandArticle)
+    products.filter(product => product.brand.articul == brandArticle)
   );
 }
 

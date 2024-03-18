@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 import '../../../../styles/style.css';
 import { AuthContext } from "../../../../routes/Routes";
 import FavoriteSvg from "./svg/FavoriteSvg";
-import CartSvg from "./svg/CartSvg";
 import SettingsSvg from "./svg/SettingsSvg";
 import LogOutSvg from "./svg/LogOutSvg";
 import { AuthorizeInAccount } from "../../../../routes/AuthAccount";
+import HeaderCart from "./header-cart/HeaderCart";
 
 
 const HeaderUser = () => {
@@ -49,7 +49,7 @@ const HeaderUser = () => {
 
                 <FavoriteSvg />
 
-                <CartSvg />
+                <HeaderCart />
 
                 <Tooltip title="Account" style={{ marginRight: '0.4rem' }}>
                     <IconButton

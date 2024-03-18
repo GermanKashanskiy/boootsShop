@@ -3,9 +3,16 @@ import { products } from "../../../../../api/data/products.data";
 import { FindBestseller } from "./BestsellerItemSearch";
 import { Container, Grid } from "@mui/material";
 import './style/bestseller-section.css';
+import { AddToCart } from "../../../../../api/local/cart/UseCart";
 
 const Bestseller = () => {
   const bestItem = FindBestseller(products);
+
+  const handleClick = () => {
+    if (bestItem != null) {
+      AddToCart(bestItem)
+    }
+  }
 
   return (
     <section className="bestseller-section">
@@ -64,7 +71,7 @@ const Bestseller = () => {
                   </div>
 
                   <div className="betss-add-btn">
-                    <a href="#">ADD TO CART</a>
+                    <button onClick={handleClick}>ADD TO CART</button>
                   </div>
                 </div>
               </div>
