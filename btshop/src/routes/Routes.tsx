@@ -11,6 +11,7 @@ import Catalog from "../pages/catalog/Catalog";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import { GetAuthorizedAccount } from "./AuthAccount";
+import Cart from "../pages/cart/Cart";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
@@ -40,13 +41,14 @@ export const Router = () => {
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Home />} />
-          <Route path="catalog/:pageNum" element={<Catalog />} />
+          <Route path="catalog" element={<Catalog />} />
           <Route path="products" element={<Products />} />
           <Route path="product/:article" element={<Product />} />
           <Route path="brands" element={<Brands />} />
           <Route path="brands/:brandArticle" element={<Brand />} />
           <Route path="sign-in" element={<Login />} />
           <Route path="sign-up" element={<Register />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="*" element={<ErrorBoundary />} />
         </Route>
       </Routes>

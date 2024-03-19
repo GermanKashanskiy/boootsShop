@@ -15,7 +15,7 @@ const Catalog = () => {
         }
       </div>
       <div id="section-btn" className="text-center">
-        <Link to="/catalog/0" className="font-900">MORE</Link>
+        <Link to="/catalog" className="font-900">MORE</Link>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { cart } from "../../../../../api/local/cart/cart.data";
 import './style/header-cart.css';
 import CloseIcon from '@mui/icons-material/Close';
 import { IProduct } from "../../../../../api/product/IProduct";
-import { RemoveFromCart } from "../../../../../api/local/cart/UseCart";
+import { Link } from "react-router-dom";
 
 const HeaderCart = () => {
   const [headerItems, setHeaderItems] = useState(cart)
@@ -43,11 +43,14 @@ const HeaderCart = () => {
                               <img src={"/DB/products/" + product.articul + "/" + product.image[0]} alt={product.articul} />
                             </div>
                             <div className="ml-1">{product.name}</div>
-                            <div className="ml-1">{product.price}</div>
+                            <div className="ml-1">{product.price}<span>&#36;</span></div>
                             <button className="ml-1" onClick={() => removeItem(product)}><CloseIcon /></button>
                           </div>
                         ))
                       }
+                      <div id="cart-btn">
+                        <Link to="/cart" {...bindToggle(popupState)} >GO TO CART</Link>
+                      </div>
                     </div>
                   </Paper>
                 </Fade>

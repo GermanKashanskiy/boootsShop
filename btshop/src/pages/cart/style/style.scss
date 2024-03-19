@@ -1,0 +1,30 @@
+#page-text {
+  font-size: 4rem;
+}
+
+#cart-products {
+  font-size: 1.5rem;
+
+  #cart-product-image {
+    img {
+      width: 8vw;
+    }
+  }
+}
+
+#order-btn {
+  font-size: 1.5rem;
+
+  a {
+    background-color: #171717;
+    border: 1px solid #171717;
+    border-radius: 30px;
+    color: #fbfbfb;
+    padding: 1rem 4rem;
+  }
+
+  a:hover {
+    color: #171717;
+    background-color: transparent;
+  }
+}

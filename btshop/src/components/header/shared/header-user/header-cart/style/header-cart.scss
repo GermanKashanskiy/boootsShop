@@ -5,4 +5,22 @@
       width: 4vw;
     }
   }
+
+  #cart-btn {
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+
+    a {
+      background-color: #171717;
+      border: 1px solid #171717;
+      border-radius: 10px;
+      color: #fbfbfb;
+      padding: 0.5rem;
+    }
+
+    a:hover {
+      color: #171717;
+      background-color: transparent;
+    }
+  }
 }
