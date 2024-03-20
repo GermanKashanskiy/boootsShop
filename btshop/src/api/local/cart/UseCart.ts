@@ -12,3 +12,7 @@ export const RemoveFromCart = (product: IProduct) => {
   }
 }
 
+export const GetCartTotalAmount = () => {
+  if (cart.products.length === 0) return 0;
+  return cart.products.reduce((total, product) => total + product.price, 0);
+}

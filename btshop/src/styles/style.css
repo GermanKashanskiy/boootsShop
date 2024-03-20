@@ -85,6 +85,18 @@
   font-size: 3rem;
 }
 
+.font-s-1N5 {
+  font-size: 1.5rem;
+}
+
+.font-s-1N1 {
+  font-size: 1.1rem;
+}
+
+.font-s-1 {
+  font-size: 1rem;
+}
+
 .no-copy {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -126,6 +138,10 @@
 
 .ml-1 {
   margin-left: 1rem;
+}
+
+.ml-2 {
+  margin-left: 2rem;
 }
 
 .mb-1 {

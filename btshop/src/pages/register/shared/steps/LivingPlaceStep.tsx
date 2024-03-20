@@ -47,43 +47,16 @@ const LivingPlaceStep = () => {
     }
   }
 
-  const validateFName = () => {
-    if (formData.fname.length > 0) {
-      setFNameValid(true)
-    }
-    else {
-      setFNameValid(false)
-    }
-  }
-
-  const validateLName = () => {
-    if (formData.lname.length > 0) {
-      setLNameValid(true)
-    }
-    else {
-      setLNameValid(false)
-    }
-  }
-
-  const validatePhone = () => {
-    if (formData.phoneNum.length) {
-      setPhoneValid(true)
-    }
-    else {
-      setPhoneValid(false)
-    }
-  }
-
   React.useEffect(() => {
-    validateFName()
+    setFNameValid(formData.fname.length > 0)
   }, [formData.fname])
 
   React.useEffect(() => {
-    validateLName()
+    setLNameValid(formData.lname.length > 0)
   }, [formData.lname])
 
   React.useEffect(() => {
-    validatePhone()
+    setPhoneValid(formData.phoneNum.length > 9)
   }, [formData.phoneNum])
 
   React.useEffect(() => {
