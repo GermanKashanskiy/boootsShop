@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { GetAuthorizedAccount } from "../../../../routes/AuthAccount";
-import { SetStepValid } from "../OrderValidation";
+import { SetStepValid } from "../order-stepper/shared/OrderValidation";
 
 interface FormData {
   fname: string,

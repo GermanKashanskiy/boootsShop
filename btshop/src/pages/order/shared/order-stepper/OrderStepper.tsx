@@ -1,9 +1,9 @@
 import React from "react";
-import { GetStepValid, SetStepValid, currentStep } from "./OrderValidation";
-import { steps } from "./OrderConsts";
+import { GetStepValid, SetStepValid, currentStep } from "./shared/OrderValidation";
+import { steps } from "./shared/Consts";
 import { Button, Step, StepLabel, Stepper } from "@mui/material";
-import DeliveryStep from "./steps/DeliveryStep";
-import PaymentStep from "./steps/payment-step/PaymentStep";
+import DeliveryStep from "../steps/DeliveryStep";
+import PaymentStep from "../steps/payment-step/PaymentStep";
 
 const OrderStepper = () => {
   const [_currentStep, setCurrentStep] = React.useState(currentStep);

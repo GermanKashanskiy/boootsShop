@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from "react";
 import { IProduct } from "../../../../../api/product/IProduct";
 import { ToggleButton, ToggleButtonGroup } from "@mui/material";
-import useWindowDimensions from "../../../../shared/UseWindowDimentions";
+import useWindowDimensions from "../../../../../hooks/UseWindowDimentions";
 
 export type Orientation = 'vertical' | 'horizontal';
 

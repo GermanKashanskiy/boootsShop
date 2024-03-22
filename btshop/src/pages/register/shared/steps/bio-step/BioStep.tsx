@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { SetStepValid } from '../../RegValidation';
+import { SetStepValid } from '../../reg-stepper/shared/RegValidation';
 import '../style/style.css';
 import { UseAccountWithEmail, UseAccountWithUsername } from '../../../../../api/account/UseAccount';
 import { validPasswordBigLetter, validPasswordLength, validPasswordNumber, validPasswordSmallLetter } from './shared/PasswordValidation';
-import { newAccount } from '../../newAccount.data';
+import { newAccount } from '../../data/newAccount.data';
 
 interface FormData {
   username: string,

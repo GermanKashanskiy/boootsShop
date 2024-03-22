@@ -5,16 +5,21 @@ import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { steps } from '../RegConsts';
-import { GetStepValid, GetisOptionalStepSkipped, SetStepValid, SetisOptionalStepSkipped, currentStep, isStepOptional, stepValid } from '../RegValidation';
+import { steps } from './shared/Consts';
+import { GetStepValid, GetisOptionalStepSkipped, SetStepValid, SetisOptionalStepSkipped, currentStep, isStepOptional, stepValid } from './shared/RegValidation';
 import BioStep from '../steps/bio-step/BioStep';
 import LivingPlaceStep from '../steps/LivingPlaceStep';
-import FavoritesStep from '../FavoritesStep';
+import FavoritesStep from '../steps/FavoritesStep';
 import { AddNewAccount } from '../../../../api/account/UseAccount';
-import { newAccount } from '../newAccount.data';
+import { newAccount } from '../data/newAccount.data';
 
 const RegStepper = () => {
   const [_currentStep, setCurrentStep] = React.useState(currentStep);
+  const stepsComponents = [
+    <BioStep />,
+    <LivingPlaceStep />,
+    <FavoritesStep />,
+  ];
 
   const handleNext = () => {
     if (!GetStepValid() && !isStepOptional(_currentStep)) {
@@ -79,7 +84,7 @@ const RegStepper = () => {
       ) : (
         <React.Fragment>
 
-          {_currentStep == 0 ? (<BioStep />) : (_currentStep == 1 ? (<LivingPlaceStep />) : (<FavoritesStep />))}
+          {stepsComponents[_currentStep]}
 
           <Button color="inherit" disabled={_currentStep == 0} onClick={handleBack} sx={{ mr: 1 }}>Back</Button>
 

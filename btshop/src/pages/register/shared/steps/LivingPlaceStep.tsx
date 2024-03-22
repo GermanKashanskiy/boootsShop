@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './style/style.css';
-import { SetStepValid } from "../RegValidation";
-import { newAccount } from "../newAccount.data";
+import { SetStepValid } from "../reg-stepper/shared/RegValidation";
+import { newAccount } from "../data/newAccount.data";
 
 interface FormData {
   fname: string,

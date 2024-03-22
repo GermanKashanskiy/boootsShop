@@ -1,4 +1,4 @@
-import { optionalStep } from "./RegConsts";
+import { optionalStep } from "./Consts";
 
 export var currentStep: number = 0
 
