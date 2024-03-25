@@ -25,6 +25,7 @@ const Login = () => {
 
   const loginValidation = () => {
     if (GetAccountWithUsernameNEmail(formData.email, formData.password).length > 0) {
+      Authorize()
       setIsAuthenticated(true)
     }
     else {
@@ -35,12 +36,6 @@ const Login = () => {
   const Authorize = () => {
     AuthorizeInAccount(GetAccountWithUsernameNEmail(formData.email, formData.password)[0])
   }
-
-  useEffect(() => {
-    if (isAuthenticated == true) {
-      Authorize()
-    }
-  }, [isAuthenticated])
 
   return (
     <div className="d-flex justify-center mt-5">

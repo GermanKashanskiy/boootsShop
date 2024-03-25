@@ -12,5 +12,6 @@ export const newAccount: IAccount = {
   country: "",
   city: "",
   street: "",
-  building: ""
+  building: "",
+  orders: []
 }

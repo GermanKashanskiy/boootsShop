@@ -1,4 +1,4 @@
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import React, { useState, useEffect } from 'react';
 import App from "../App";
 import Home from "../pages/home/Home";
@@ -13,6 +13,7 @@ import Register from "../pages/register/Register";
 import { GetAuthorizedAccount } from "./AuthAccount";
 import Cart from "../pages/cart/Cart";
 import Order from "../pages/order/Order";
+import Profile from "../pages/profile/Profile";
 
 export const AuthContext = React.createContext({
   isAuthenticated: false,
@@ -47,10 +48,11 @@ export const Router = () => {
           <Route path="product/:article" element={<Product />} />
           <Route path="brands" element={<Brands />} />
           <Route path="brands/:brandArticle" element={<Brand />} />
-          <Route path="sign-in" element={<Login />} />
+          <Route path="sign-in" element={isAuthenticated ? <Navigate to="/profile" /> : <Login />} />
           <Route path="sign-up" element={<Register />} />
           <Route path="cart" element={<Cart />} />
-          <Route path="order" element={<Order />} />
+          <Route path="order" element={!isAuthenticated ? <Navigate to="/sign-in" /> : <Order />} />
+          <Route path="profile" element={!isAuthenticated ? <Navigate to="/sign-in" /> : <Profile />} />
           <Route path="*" element={<ErrorBoundary />} />
         </Route>
       </Routes>

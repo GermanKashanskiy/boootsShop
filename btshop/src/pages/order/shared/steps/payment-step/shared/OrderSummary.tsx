@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { cart } from "../../../../../api/local/cart/cart.data";
-import { GetCartTotalAmount } from "../../../../../api/local/cart/UseCart";
+import { cart } from "../../../../../../api/local/cart/cart.data";
+import { GetCartTotalAmount } from "../../../../../../api/local/cart/UseCart";
 
 const OrderSummary = () => {
   const [cartItems] = useState(cart)

@@ -8,10 +8,11 @@ export const accounts: IAccount[] = [
     password: "A1234567",
     fName: "admin",
     lName: "admin",
-    phone: "1234567890",
+    phone: "+1234567890",
     country: "none",
     city: "none",
     street: "none",
-    building: "none"
+    building: "none",
+    orders: []
   }
 ]

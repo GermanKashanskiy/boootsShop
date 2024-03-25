@@ -11,12 +11,14 @@ import '../../styles/style.css'
 const Header = () => {
     return (
         <Paper elevation={2}>
-            <header className='header d-flex justify-space-around items-center'>
-                <HeaderLogo />
-                <HeaderSearch />
-                <HeaderUser />
-            </header>
-            <nav>
+            <Paper elevation={0} className='header-position'>
+                <header className='header d-flex justify-space-around items-center'>
+                    <HeaderLogo />
+                    <HeaderSearch />
+                    <HeaderUser />
+                </header>
+            </Paper>
+            <nav className='pt-6'>
                 <Nav />
             </nav>
         </Paper>

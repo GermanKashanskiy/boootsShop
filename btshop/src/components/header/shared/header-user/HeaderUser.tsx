@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Box from '@mui/material/Box';
 import Avatar from '@mui/material/Avatar';
 import Menu from '@mui/material/Menu';
@@ -10,8 +10,6 @@ import SvgIcon from '@mui/material/SvgIcon';
 import { Link } from "react-router-dom";
 import '../../../../styles/style.css';
 import { AuthContext } from "../../../../routes/Routes";
-import FavoriteSvg from "./svg/FavoriteSvg";
-import SettingsSvg from "./svg/SettingsSvg";
 import LogOutSvg from "./svg/LogOutSvg";
 import { AuthorizeInAccount } from "../../../../routes/AuthAccount";
 import HeaderCart from "./header-cart/HeaderCart";
@@ -47,8 +45,6 @@ const HeaderUser = () => {
         <React.Fragment>
             <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
 
-                <FavoriteSvg />
-
                 <HeaderCart />
 
                 <Tooltip title="Account" style={{ marginRight: '0.4rem' }}>
@@ -60,7 +56,7 @@ const HeaderUser = () => {
                         aria-haspopup="true"
                         aria-expanded={open ? 'true' : undefined}
                     >
-                        <Avatar sx={{ width: 32, height: 32 }}>M</Avatar>
+                        <Avatar sx={{ width: 32, height: 32 }} />
                     </IconButton>
                 </Tooltip>
             </Box>
@@ -103,16 +99,10 @@ const HeaderUser = () => {
                 {isAuthenticated == false ? (<div></div>) :
                     (
                         <MenuItem onClick={handleClose}>
-                            <Avatar />
-                            <div className="font-900">PROFILE</div>
-                        </MenuItem>
-                    )}
-
-                {isAuthenticated == false ? (<div></div>) :
-                    (
-                        <MenuItem onClick={handleClose}>
-                            <Avatar />
-                            <div className="font-900">MY ACCOUNT</div>
+                            <Link to={"/profile"} className="d-flex">
+                                <Avatar />
+                                <div className="font-900">PROFILE</div>
+                            </Link>
                         </MenuItem>
                     )}
 
@@ -126,14 +116,6 @@ const HeaderUser = () => {
                                 <div className="font-900">SIGN IN</div>
                             </Link>
                         </MenuItem >
-                    )}
-
-                {isAuthenticated == false ? (<div></div>) :
-                    (
-                        <MenuItem onClick={handleClose}>
-                            <SettingsSvg />
-                            <div className="font-900">SETTINGS</div>
-                        </MenuItem>
                     )}
 
                 {isAuthenticated == false ? (<div></div>) :

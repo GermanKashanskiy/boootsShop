@@ -1,3 +1,5 @@
+import { IOrder } from "../order/IOrder";
+
 export interface IAccount {
   accountId: number,
   username: string,
@@ -9,5 +11,6 @@ export interface IAccount {
   country: string,
   city: string,
   street: string,
-  building: string
+  building: string,
+  orders: IOrder[]
 }

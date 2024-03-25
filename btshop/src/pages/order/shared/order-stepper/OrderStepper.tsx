@@ -4,6 +4,9 @@ import { steps } from "./shared/Consts";
 import { Button, Step, StepLabel, Stepper } from "@mui/material";
 import DeliveryStep from "../steps/DeliveryStep";
 import PaymentStep from "../steps/payment-step/PaymentStep";
+import { Link } from "react-router-dom";
+import { AddNewOrder } from "../../../../api/order/UseOrder";
+import { newOrder } from "../../../../api/local/order/newOrder.data";
 
 const OrderStepper = () => {
   const [_currentStep, setCurrentStep] = React.useState(currentStep);
@@ -15,7 +18,7 @@ const OrderStepper = () => {
     }
 
     if (_currentStep == steps.length - 1) {
-      //AddNewAccount(newAccount)
+      AddNewOrder(newOrder)
     }
 
     setCurrentStep((step) => step + 1)
@@ -48,10 +51,9 @@ const OrderStepper = () => {
       {_currentStep === steps.length ? (
         <React.Fragment>
 
-          All steps completed - you&apos;re finished
-
-          <Button onClick={handleReset}>Reset</Button>
-
+          <div className="mt-3 text-center font-archivo font-900 font-s-1N5">
+            <Link to="/">TO HOME PAGE</Link>
+          </div>
         </React.Fragment>
       ) : (
         <React.Fragment>

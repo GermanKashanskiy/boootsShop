@@ -47,4 +47,9 @@
     flex-wrap: wrap;
     justify-content: space-around;
   }
+}
+.header-position {
+  position: fixed;
+  width: 100%;
+  z-index: 999999;
 }/*# sourceMappingURL=Header.css.map */

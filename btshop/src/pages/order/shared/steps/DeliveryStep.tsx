@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { GetAuthorizedAccount } from "../../../../routes/AuthAccount";
 import { SetStepValid } from "../order-stepper/shared/OrderValidation";
+import { newOrder } from "../../../../api/local/order/newOrder.data";
 
 interface FormData {
   fname: string,
@@ -38,6 +39,14 @@ const DeliveryStep = () => {
 
   const stepValidation = () => {
     if (isFNameValid && isLNameValid && isPhoneValid && isCountryValid && isCityValid && isStreetValid && isBuildingValid) {
+      newOrder.fName = formData.fname
+      newOrder.lName = formData.lname
+      newOrder.phone = formData.phoneNum
+      newOrder.country = formData.country
+      newOrder.city = formData.city
+      newOrder.street = formData.street
+      newOrder.building = formData.building
+      newOrder.customerId = account?.accountId || 0
       SetStepValid(true)
     }
     else {
